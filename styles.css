@@ -1,0 +1,161 @@
+
+body {
+	background: url("img/scratches.png")  #DEB887; /*afaba7*/
+	padding:0;
+	margin:0;
+	font-family: 'Marck Script', cursive;
+	font-size: 16px;
+}
+
+header {
+	padding-left:20px;
+	height:50px;
+}
+
+input[type="button"] {
+	padding:10px;
+	color:black;
+	font-weight:bold;
+	text-shadow: 1px 1px 0px white;
+	background:#EFE4DC;
+	border:1px solid black;
+	border-radius:5px;
+	border-radius:5px;
+	float:left;
+	margin:5px 10px 0 0;
+}
+
+input[type="button"]:hover {
+	background:#afaba7;
+	color:white;
+	text-shadow: 1px 1px 0px black;
+	cursor:pointer;
+}
+
+/* Postick's button "delete" */
+.delete {
+	cursor:pointer;
+}
+
+
+.postick {
+	border:1px solid gray;
+	width:200px;
+	height:200px;
+	padding:4px;
+	background:#FFFC7F url("img/background.png") 0 0 repeat;
+	position:absolute;
+	box-shadow: #000 1px 2px 4px;
+}
+
+/*Rotate a postick*/
+.left{
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg); /* IE 9 */
+	-webkit-transform: rotate(8deg); /* Safari and Chrome */
+}
+.right{
+
+	transform: rotate(-8deg);
+	-ms-transform: rotate(-8deg); /* IE 9 */
+	-webkit-transform: rotate(-8deg); /* Safari and Chrome */
+}
+
+/* Place for Postick's buttons "delete" and "info" */
+.toolbar {
+	z-index: 3;
+	position: absolute;
+	top:3px;
+	left: 0px;
+	width:100%;
+	height: 20px;
+}
+
+.toolbar .infoButton{
+	float: right;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+
+}
+
+.toolbar span {
+	float: right;
+	display: inline-block;
+	text-align:right;
+	font-weight:bold;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+.toolbar .infoButton img,
+.toolbar span img {	
+	width: 20px;
+	height: 20px;
+}
+
+/* Style fo Title in postick */
+.editable.title {
+	cursor:pointer;
+	height:50px;
+	margin:23px auto 0;
+	width:100%;
+	font-weight: bold;
+	overflow: hidden;
+	font-size: 19px;
+	line-height: 20px;
+	
+}
+
+/* Style fo Content in postick */
+.editable.infoText {
+	cursor:pointer;
+	height:110px;
+	margin:10px auto 0;
+	width:100%;
+	overflow: hidden;
+	font-size: 16px;
+	
+}
+.editable:hover {
+	border:1px dotted gray;
+}
+.right .editable{
+	padding-left: 2px;
+	width: 98%;
+}
+.left .editable{
+	width: 99%;
+}
+/*Style for a div with the status*/
+.settings{
+	display: none;
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #fff url("img/background.png") 0 0 repeat;
+	color: #000;
+	z-index: 2;
+	font-weight: bold;
+}
+
+.settingsInner {
+	padding:10px;
+}
+
+/*Style for the chosen status*/
+.red{
+	background-color: #ff3c3c;
+}
+.yellow{
+	background-color: #ffff3c;
+}
+.green{
+	background-color: #3cff3c;
+}
+
+.green .infoText,
+.green .title {text-decoration:line-through;}

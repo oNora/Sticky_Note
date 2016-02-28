@@ -2,6 +2,7 @@ Description
 ===========
 
 The task is to make sticky notes functionality. Imagine browser as a board, where you can add notes.
+<br />Demo link: http://onora.github.io/Sticky_Note/
 
 Basic requirements:
 
